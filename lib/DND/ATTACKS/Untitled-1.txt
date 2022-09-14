@@ -1,0 +1,43 @@
+Ok so the three principle technologies of buying on darknet markets are
+
+cryptocurrency
+openpgp encryption
+tor
+
+I'll handle these one by one.
+
+Cryptocurrency is a pseudoannonymous money transfer scheme.  The currency
+consists of a public ledger that is a reccord of all transactions.  It is poor to think of it
+as annonymous for this reason.  However, because there is no record of identities, and it is possible to
+use it over annonymizing networkds like tor, it has a degree of annonymity.
+
+Back in the day it was possible to purchase currency on semi legit sites with no identification, but those
+days are over.  While bitcoin is probably the best to use as it is widely accepted (check the local market rules), litecoin
+and a few others are also used.  Use a legit website that will demand id for creating an account (coinbase.com is as good as any).
+This process can take acouple of weeks to complete so do this first.
+
+While the currency is ultimately a public ledger, there is an abstracted wallet and coin system (wallets hold coins).  A wallet is a
+piece of software for handleing coin transactions.  When you have an account on a website, the website will have a "wallet" for controlling the transactions of
+coins you purchase.  Wallets have a series of addresses for recieving transactions, and can also broadcast a transaction to another adrress.  This "sends" the coins
+in one wallet to another.  So if you have 1 bitcoin in your wallet, you could send it to an address in my wallet.  This pays me the 1 bitcoin, that I can then transfer to other walets,
+spending it in turn. 
+
+Any "wallet" on a website you purchase currency on is ultimately controlled by whoever owns the website.  It is a good idea to transfer any bitcoins purchased on the web to a wallet on your 
+pc or phone.  Electrum is a good wallet program which has both bitcoin and lc versions.  When you make a purchase on the darkweb you will ultimate transfer cryptocurrency to 
+god knows who on the darkweb, so be very careful.  Try to use a site with a good reputation ( but info is hard to come by, there are some forums I will note in the tor section).
+
+It is easy to intercept electronic messages, even over annonymizing networks like tor.  For this reason, any details sent over the web (like adresses) must be encypted.  This is done using 
+openpgp, an encyption standard.  It is a public key encryption system, and well documented so i won't dwell on it (o r give a garbled not even half correct explanation).  I will note 
+that it is important to get the public keys of both any vendors you use and any websites.  This is an important security precaution.  Download software and make a private key.
+
+Lastly you need to download tor.  Tor is an annonymizing network, and the name of a program that handles your connection. If downloaded as bundle it will contain a webbrowser that will allow you to visit oplain web site as well
+as hidden onion sites.  These sites are the "dark web".  Any site on the dark web will ultimately either close down stealing all the money currently in transaction on the site, or be closed
+by the government (amounting to the same thing).  It happens periodically.  Do not ever keep coins on wallets on these websites, only transfer as much as is needed for purchaseing 
+(prices and dependability still better than irl).  Sites on the darkweb often change their address (sometimes every few hours). Legit addresses can be distinguished from phishing schemes
+using pgp signature (this is why its important to keep keys from any website).  A list of current addresses is maintained at darkfailllnkf4vf.onion (plainweb dark.fail). I have used Empire Market,
+and heard good things aboth Cannazon, but nowhere is especially trustworthy.
+
+These sites function much more like E-Bay than say Amazon.  They will connect you to individual vendors with varying degrees of reliability.  Pay attention to feedback.  Keep vendor keys so you
+can follow them to other sites if your favourite gets shut down.
+
+There is much more to get into, sites usually have user guides.

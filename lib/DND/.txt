@@ -1,0 +1,20 @@
+
+
+bonusSpells :: Int -> Int -> Int
+bonusSpells 0 _ = 0
+bonusSpells spelllevel i = max 0 $ (i - (2 + (2 * spelllevel))) `div` 8
+
+
+bardspells :: Int -> Int -> Int
+bardspells 0 _ = 0
+bardspells bardlevel spelllevel
+    | spelllevel >= 7 = 0
+    | spelllevel == 0 = 100
+    | bardlevel == 20 && spelllevel == 6 = 5
+    | bardlevel >= 19 && spelllevel == 5 = 5
+    | bardlevel >= (9 + (3 * (spelllevel - 1))) = 5
+    | bardlevel >= (5 + (3 * (spelllevel - 1))) = 4
+    | bardlevel >= (3 + (3 * (spelllevel - 1))) = 3
+    | bardlevel >= (2 + (3 * (spelllevel - 1))) = 2
+    | bardlevel >= (1 + (3 * (spelllevel - 1))) = 1
+    | otherwise = 0

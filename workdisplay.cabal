@@ -18,9 +18,61 @@ extra-source-files:  CHANGELOG.md
 
 library
   exposed-modules:     MyLib
+                      DND.ATTACKS.Attack
+                      DND.ATTACKS.AttackFunctions
+                      DND.ATTACKS.AttackFunctions2
+                      DND.ATTACKS.DamageReduction
+                      DND.ATTACKS.Smite
+                      DND.ATTACKS.Weapon
+                      DND.CHARACTER.AbilityScores
+                      DND.CHARACTER.Bonuses
+                      DND.CHARACTER.Character
+                      DND.CHARACTER.Class
+                      DND.CHARACTER.ClassFeatures
+                      DND.CHARACTER.ClassUpdate
+                      DND.CHARACTER.ClassUpdate2
+                      DND.CHARACTER.Status
+                      DND.CHARACTER.Sleep
+                      DND.DAMAGEDICE.DamageDice
+                      DND.DAMAGEDICE.DamageDiceFunctions
+                      DND.DAMAGEDICE.Elemental
+                      DND.DEFENSE.Armour
+                      DND.DEFENSE.Defense
+                      DND.DEFENSE.DefenseFunctions
+                      DND.SPELLS.Spell
+                      DND.SPELLS.SpellFunctions
+                      DND.SPELLS.Summons
+                      DND.STATDAMAGE.StatDamage
+                      DND.STATDAMAGE.StatDamageFunctions
+                      DND.STATUSEFFECTS.Effect
+                      DND.STATUSEFFECTS.Effects
+                      DND.STATUSEFFECTS.StatusEffectFunctions
+                      DND.STATUSEFFECTS.StatusEffectFunctions1
+                      DND.STATUSEFFECTS.StatusEffectFunctions2
+                      DND.STATUSEFFECTS.StatusEffectFunctions3
+                      DND.Action
+                      DND.IO
+                      DND.Roll
+                      DND.Maps
+                      DND.Parser
+                      DND.TemporaryValue
+                      DND.Time
+                      DND.Turn
   -- other-modules:
   -- other-extensions:
-  build-depends:       base ^>=4.13.0.0
+  build-depends:       base ^>=4.13.0.0,
+                      base,
+                      transformers,
+                      generic-lens,
+                      lens,
+                      random,
+                      ilist,
+                      mtl,
+                      gloss,
+                      bmp,
+                      GLUT,
+                      containers,
+                      bytestring
   hs-source-dirs:      lib
   default-language:    Haskell2010
 
@@ -28,9 +80,25 @@ executable workdisplay
   main-is:             Main.hs
   -- other-modules:
   -- other-extensions:
-  build-depends:       base ^>=4.13.0.0, workdisplay
+  build-depends:       base ^>=4.13.0.0, 
+                      workdisplay,
+                      transformers,
+                      generic-lens,
+                      lens,
+                      random,
+                      ilist,
+                      mtl,
+                      gloss,
+                      bmp
   hs-source-dirs:      src-exe
   default-language:    Haskell2010
+  ghc-options:         -Wall 
+                       -threaded
+                       -O2
+                       -fno-liberate-case 
+                       -funfolding-use-threshold1000 
+                       -funfolding-keeness-factor1000 
+                       -optlo-O3
 
 test-suite workdisplay-test
   default-language:    Haskell2010
